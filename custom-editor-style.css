@@ -1,0 +1,140 @@
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Questrial);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900,800,600,500);
+@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic);
+
+body {
+	margin: 40px calc(50% - 345px);
+}
+strong {
+	font-family: "Montserrat";
+	font-weight: 500;
+	color: #000;
+	font-size: 0.9em;
+}
+h3, h4 {
+	margin: 30px 0 0 0;
+	color: #333;
+	font: 22px 'Helvetica Neue', Helvetica, Arial;
+	font-weight: 500;
+	text-align: left;
+	font-style: normal;
+}
+h6 {
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	background: transparent;
+	position: relative;
+	margin: -10px 0 15px 0;
+	padding: 5px 0;
+	color: #333;
+	font: 11px "Questrial";
+	font-weight: 200;
+	text-align: center;
+	text-transform: uppercase;
+}
+p, h5 {
+	font-size: 18px;
+	letter-spacing: 1.3px;
+	color: #333;
+	line-height: 28px;
+	margin: 0;
+	padding: 10px 0;
+	text-align: left !important;
+	font-family: 'Questrial';
+}
+
+ol, ul {
+	font-size: 18px;
+	letter-spacing: 1.3px;
+	color: #333;
+	line-height: 28px;
+	margin: 25px 0 25px 75px;
+	padding: 0;
+	list-style: none;
+	counter-reset: cnt;
+	font-family: 'Questrial';
+}
+ol li, ul li {
+	margin-bottom: 20px;
+}
+ol li:last-of-type, ol li:last-of-type {
+	margin-bottom: 0;
+}
+
+ol li:before, ul li:before {
+	display: block;
+	width: 35px;
+	height: 35px;
+	background: #3F7BB5;
+	color: #fff;
+	border-radius: 50%;
+	text-align: center;
+	font: 18px "Montserrat";
+	font-weight: 900;
+	position: absolute;
+	margin: -5px 0 0 -55px;
+	padding: 7px 0 0 0;
+	box-sizing: border-box;
+	counter-increment: cnt;
+	content: "";
+}
+ul li:before {
+	margin: -1px 0 0 -51px;
+	width: 27px;
+	height: 27px;
+}
+ol li:before {
+	content: counter(cnt);
+}
+
+p:first-of-type {
+	font-size: 19px;
+	color: #000;
+	font-weight: 600;
+}
+p a {
+	color: #4992d3;
+	text-decoration: none;
+	font-weight: bold;
+}
+p a:hover {
+	color: #144b7c;
+	text-decoration: none;
+	font-weight: bold;
+}
+blockquote {
+	margin: 10px 40px 10px 90px;
+	font-family: "Raleway";
+	min-height: 80px;
+}
+blockquote:before {
+	position: absolute;
+	color: #4992d3;
+	font-size: 160px;
+	margin: -12px 0 0 -90px;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	content: '\201C';
+
+    -ms-transform: rotate(-4deg); /* IE 9 */
+    -webkit-transform: rotate(-4deg); /* Chrome, Safari, Opera */
+    transform: rotate(-4deg);
+}
+
+blockquote p {
+	font-size: 18px !important;
+	color: #333 !important;
+	font-weight: 200 !important;
+}
+
+img.size-full {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+}
+div.size-full-container {
+	background: transparent;
+}
